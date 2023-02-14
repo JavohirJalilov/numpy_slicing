@@ -126,5 +126,5 @@ class PatternOne:
 q0 = FillOnes()
 q1 = PatternOne()
 
-arr = np.ones((10,10))
-q1.check(arr, "JavohirJalilov")
+# arr = np.ones((10,10))
+# q1.check(arr, "JavohirJalilov")
