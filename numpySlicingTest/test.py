@@ -30,7 +30,7 @@ class FillOnes:
                 {'isSolved': isSolved, 'name': 'fill_ones'}]
             }
         response = requests.post(url, json=data)
-        
+        print(data)
         if isSolved:
             # done emoji
             print("✅ Accepted")
@@ -71,15 +71,17 @@ class PatternOne:
             'tasks': [
                 {'isSolved': isSolved, 'name': 'pattern_1'}]
             }
+        print(data)
         response = requests.post(url, json=data)
         
         if isSolved:
             # done emoji
-            print("\U0001F44D Accepted")
+            print("✅ Accepted")
         else:
             # fail emoji
-            print("\U0001F44E Failed")
+            print("❌ Failed")
         print(response.status_code)
+
     def hint(self):
         """
         Return a hint to the user
@@ -93,3 +95,8 @@ arr0 = np.ones(shape=(10, 10), dtype=np.uint8)
 
 q0 = FillOnes()
 q1 = PatternOne()
+
+# arr = np.ones(shape=(10, 10), dtype=np.uint8)
+
+# q0.check(arr, "JavohirJalilov")
+# q1.check(arr, "JavohirJalilov")
