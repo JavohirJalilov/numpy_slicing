@@ -5,5 +5,4 @@ numpySlicingTest/test.py
 numpySlicingTest.egg-info/PKG-INFO
 numpySlicingTest.egg-info/SOURCES.txt
 numpySlicingTest.egg-info/dependency_links.txt
-numpySlicingTest.egg-info/requires.txt
 numpySlicingTest.egg-info/top_level.txt
