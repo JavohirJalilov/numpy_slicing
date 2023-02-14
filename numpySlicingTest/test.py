@@ -1,8 +1,8 @@
 import requests
 import numpy as np
 import json
-from test_case_fill_one import TestCaseFillOne
-from test_case_pattern_1 import TestCasePatternOne
+from test_case_fill_one.test_case import TestCaseFillOne
+from test_case_pattern_1.test_case import TestCasePatternOne
 
 url = "https://codeschoolhomeworkapi.pythonanywhere.com/homework/attempt/"
 
@@ -30,7 +30,7 @@ class FillOnes:
                 {'isSolved': bool(isSolved), 'name': 'fill_ones'}]
             }
         response = requests.post(url, json=data)
-        print(data)
+   
         if isSolved:
             # done emoji
             print("✅ Accepted")
@@ -92,3 +92,6 @@ class PatternOne:
 
 q0 = FillOnes()
 q1 = PatternOne()
+
+# arr = np.ones((10,10))
+# q0.check(arr, "JavohirJalilov")
