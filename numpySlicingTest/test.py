@@ -41,7 +41,7 @@ class FillOnes:
             'tasks': [
                 {'isSolved': bool(isSolved), 'name': 'fill_ones'}]
             }
-        print(data)
+
         response = requests.post(url, json=data)
 
         if isSolved:
@@ -127,4 +127,4 @@ q0 = FillOnes()
 q1 = PatternOne()
 
 # arr = np.ones((10,10))
-# q1.check(arr, "JavohirJalilov")
+# q0.check(arr, "JavohirJalilov")
