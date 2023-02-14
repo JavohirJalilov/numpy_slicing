@@ -2,6 +2,8 @@ README.md
 setup.py
 numpySlicingTest/__init__.py
 numpySlicingTest/test.py
+numpySlicingTest/test_case_fill_one.py
+numpySlicingTest/test_case_pattern_1.py
 numpySlicingTest.egg-info/PKG-INFO
 numpySlicingTest.egg-info/SOURCES.txt
 numpySlicingTest.egg-info/dependency_links.txt

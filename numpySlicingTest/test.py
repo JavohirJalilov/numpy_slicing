@@ -1,8 +1,8 @@
 import requests
 import numpy as np
 import json
-from test_case.test_case_fill_one import TestCaseFillOne
-from test_case.test_case_pattern_1 import TestCasePatternOne
+from test_case_fill_one import TestCaseFillOne
+from test_case_pattern_1 import TestCasePatternOne
 
 url = "https://codeschoolhomeworkapi.pythonanywhere.com/homework/attempt/"
 
@@ -38,7 +38,7 @@ class FillOnes:
             # fail emoji
             print("❌ Failed")
         print(response.status_code)
-        
+
     def hint(self):
         """
         Return a hint to the user
