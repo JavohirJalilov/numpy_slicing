@@ -1,5 +1,40 @@
 import numpy as np
-from check import CheckSolution
+import requests
+
+class CheckSolution:
+    def __init__(self, task_name):
+        self.task_name = task_name
+        self.url = "https://codeschoolhomeworkapi.pythonanywhere.com/homework/attempt/"
+    def checking(self, solution, github_username, isSolved):
+
+        """
+        Chack if the solution is correct
+
+        Args:
+            solution (np.ndarray): solution to check
+            github_username (str): github username
+
+        Returns:
+            bool: True if the solution is correct
+        """
+
+        data = {
+            'github': github_username,
+            'repo': 'AIGroup/numpy_slicing',
+            'tasks': [
+                {'isSolved': bool(isSolved), 'name': self.task_name}]
+            }
+
+        response = requests.post(self.url, json=data)
+
+        if isSolved:
+            # done emoji
+            print("✅ Accepted")
+        else:
+            # fail emoji
+            print("❌ Failed")
+        print(response.status_code)
+
 
 class FillOnes(CheckSolution):
     def __init__(self, task_name):

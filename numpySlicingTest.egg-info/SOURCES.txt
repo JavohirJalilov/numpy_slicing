@@ -1,7 +1,6 @@
 README.md
 setup.py
 numpySlicingTest/__init__.py
-numpySlicingTest/check.py
 numpySlicingTest/test.py
 numpySlicingTest.egg-info/PKG-INFO
 numpySlicingTest.egg-info/SOURCES.txt
